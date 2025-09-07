@@ -7,6 +7,8 @@ async def say_hello(nome):
     print(f"{nome} disse olá")
 
 async def main():
+    await say_hello("Isis") #vai rodar sozinha primeiro
+
     await asyncio.gather(
         say_hello("João"),
         say_hello("Victor")
